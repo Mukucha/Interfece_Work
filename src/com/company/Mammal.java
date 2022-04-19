@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mammal extends Animal {
+public class Mammal extends Animal implements AnimalBehavior,AnimalMove {
     private  String orderArnold55322;
 
     public Mammal(){
@@ -32,6 +32,8 @@ public class Mammal extends Animal {
     }
 
 
+    @Override
+    public void sleep() {
 
-
+    }
 }

@@ -1,6 +1,6 @@
 package com.company;
 
-class Bird extends Animal {
+class Bird extends Animal implements AnimalMove,AnimalBehavior {
     private String TypeArnold55322;
     public Bird(){
         super();
@@ -29,5 +29,10 @@ class Bird extends Animal {
     public void setTypeArnold55322(String w){this.TypeArnold55322=w;};
     public String ToString(){
         return "Bird :\n "+"Type of Bird : "+TypeArnold55322;
+    }
+
+    @Override
+    public void sleep() {
+
     }
 }

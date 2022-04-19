@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dog extends Mammal{
+public class  Dog extends Mammal implements AnimalBehavior,AnimalMove{
     private String breedArnold55322;
 
     Dog(){
@@ -33,5 +33,10 @@ public class Dog extends Mammal{
         return "Dog(" +
                 "breed" + breedArnold55322 + '\'' +
                 '}';
+    }
+
+    @Override
+    public void sleep() {
+
     }
 }

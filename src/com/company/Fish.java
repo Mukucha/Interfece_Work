@@ -1,6 +1,6 @@
 package com.company;
 
-class Fish extends Animal{
+class  Fish extends Animal implements AnimalBehavior,AnimalMove{
     private String GhostArnold55322;
     public Fish(){
         super();
@@ -10,7 +10,7 @@ class Fish extends Animal{
         super(name,age,weight);
         this.GhostArnold55322 = GhostArnold55322;
     }
-    public Fish(int age , String General_type){
+    public Fish(int age , String GhostArnold55322){
         super(age);
         this.GhostArnold55322 = GhostArnold55322;
     }
@@ -19,7 +19,7 @@ class Fish extends Animal{
 
     @Override
     public void getVoice() {
-        System.out.println("Blu Blu BLu");
+        System.out.println("The fish is swimming");
     }
     @Override
     public void eat(String foodNameArnold55322) {
@@ -29,5 +29,10 @@ class Fish extends Animal{
     public void setGhostArnold55322(String w){this.GhostArnold55322=w;};
     public String ToString(){
         return "Fish :\n "+"General Type of Fish : "+GhostArnold55322;
+    }
+
+    @Override
+    public void sleep() {
+
     }
 }

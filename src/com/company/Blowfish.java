@@ -1,6 +1,6 @@
 package com.company;
 
-public class Blowfish extends Fish{
+public class Blowfish extends Fish implements AnimalBehavior, AnimalMove{
     private String TypeArnold55322;
     public Blowfish(){
         super();
@@ -34,6 +34,11 @@ public class Blowfish extends Fish{
     public void setType(String w){this.TypeArnold55322=w;};
     public String ToString(){
         return "BlowFish :\n "+"Type : "+TypeArnold55322;
+    }
+
+    @Override
+    public void sleep() {
+
     }
 }
 

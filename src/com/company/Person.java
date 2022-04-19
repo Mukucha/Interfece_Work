@@ -62,4 +62,24 @@ class staff extends Person {
         employee.initialize1();
         employee.print1();
     }
-}
+
+    interface salary {
+        int hoursArnold55322 = 0;
+        int ExtrahoursArnold55322 = 0;
+
+        int salaryToPay(int hours, int rate);
+
+       default int salaryOverTime(int hours, int rate ){
+           return salaryToPay(hours,rate);
+       }
+       static void CheckBonusArnold55322(int YearofExperienceArnold55322){
+           if (YearofExperienceArnold55322==10){
+               System.out.println("Yes employ should receive bonus");}
+               else{
+                   System.out.println("Employee does not deserve salary");
+               }
+           }
+       }
+
+    }
+

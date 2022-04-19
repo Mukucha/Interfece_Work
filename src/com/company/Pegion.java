@@ -1,6 +1,6 @@
 package com.company;
 
-public class Pegion extends Bird{
+public class Pegion extends Bird implements AnimalBehavior,AnimalMove{
     private int NOSpecies;
     Pegion(){
         super();
